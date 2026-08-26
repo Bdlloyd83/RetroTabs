@@ -8,28 +8,38 @@
     <body>
         
         <h1 id="main">Retro Tabs</h1>
-        
-        <div class="app">
-            <div class="appName">
-            <p>
-                Calendar
-            </p>
+      <!-- ...existing code... -->
+<div class="apps">
+<div class="app">
+    <div class="appName">
+        <p>Calendar</p>
+    </div>
+    <div class="appContents">
+        <div id="calendar">
+            <div class="calendarHeader">
+                <button id="previousMonth">&lt;</button>
+                <strong id="monthYear"></strong>
+                <button id="nextMonth">&gt;</button>
             </div>
-            <div class="appContents">
-                Coming Soon!
+            <div class="calendarWeekdays">
+                <span>Sun</span><span>Mon</span><span>Tue</span>
+                <span>Wed</span><span>Thu</span><span>Fri</span>
+                <span>Sat</span>
             </div>
-            
+            <div id="calendarDays"></div>
         </div>
-        <div class="app">
-            <div class="appName">
-            <p>
-                Notepad
-            </p>
-            </div>
-            <div class="appContents">
-                <p>Begin typing...</p>
-            </div>
-        </div>
+    </div>
+</div>
+
+<div class="app">
+    <div class="appName">
+        <p>Notepad</p>
+    </div>
+    <div class="appContents">
+        <textarea id="notepad" placeholder="Begin typing..."></textarea>
+    </div>
+</div>
+
         <div class="app">
             <div class="appName">
                 Doom
@@ -38,9 +48,7 @@
             Coming Soon!
             </div>
         </div>
-        <div class="taskbar">
-            <p id="clock">00:00:00 AM</p>
-        </div>
+       
         <div class="app">
             <div class="appName">
                 About Me
@@ -58,10 +66,25 @@
                 My Projects
             </div>
             <div class="appContents">
-                <p>Software: RetroTabs, <a href="https://bdlloyd83.github.io/aBeginnersGuidetoDroneWarfare/works.html">Drone Warfare</a>, <a href="https://bdlloyd83.github.io/WisdomOS1.0/">WisdomOS</a></p>
-                <p>Hardware: <a href="https://stardance.hackclub.com/projects/53983">3d-printed brushless motor</a></p>
+                <p>Software: RetroTabs,<br> <img src="drone.png"><br><a href="https://bdlloyd83.github.io/aBeginnersGuidetoDroneWarfare/works.html">Drone Warfare</a>,<br> <img src="wisdom.png"><br><a href="https://bdlloyd83.github.io/WisdomOS1.0/">WisdomOS</a></p>
+                <p>Hardware: <br><img src="motor.png" alt="motor"><br><a href="https://stardance.hackclub.com/projects/53983">3d-printed brushless motor</a></p>
             </div>
         </div>
-
+        <div class="app">
+            <div class="appName">
+                Contact
+            </div>
+            <div class="appContents">
+                <p>Feel free to reach out through these platforms some way or<br> another. Im sure you can i dont know how other than<br> commenting on my
+                    star dance posts which seems <br> interesting and public but it works. <a href="https://stardance.hackclub.com/@bradlloyd/projects">Stardance</a> <a href="c:\Users\theha\Downloads\Screenshot 2026-08-22 171634.png">Github</a>
+                </p>
+            </div>
+        </div>
+        </div>
+         <div class="taskbar">
+            <p id="clock">00:00:00 AM</p>
+        </div>
+        <br>
+        <br>
     </body>
 </html>
