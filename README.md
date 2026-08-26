@@ -1,6 +1,6 @@
 # RetroTabs
 A retro feeling tab using guide to allow you the feel of 1990's intenet with acsess to 2026 tech.
-<img src="Retro 2.0png">
+<img src="Retro2.png">
 Retro tabs is my personal os-like website that gives the user a variety of features and functions from the 
 calendar
 clock
