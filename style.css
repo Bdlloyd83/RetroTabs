@@ -32,3 +32,87 @@ body{
     position: fixed;
     bottom: 0;
 }
+#notepad {
+    width: 100%;
+    min-height: 180px;
+    box-sizing: border-box;
+    resize: vertical;
+    font: inherit;
+}
+
+.calendarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendarHeader button {
+    cursor: pointer;
+}
+
+.calendarWeekdays,
+#calendarDays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+}
+
+.calendarWeekdays {
+    font-weight: bold;
+}
+
+#calendarDays span {
+    padding: 6px;
+}
+
+#calendarDays .today {
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+#main {
+    flex-basis: 100%;
+}
+
+.app {
+    flex: 0 0 auto;
+}
+img{
+    width: 90px;
+    height: 90px;
+}
+body {
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#main {
+    text-align: center;
+}
+
+.apps {
+    columns: 3 250px;
+    column-gap: 15px;
+}
+
+.app {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    break-inside: avoid;
+}
