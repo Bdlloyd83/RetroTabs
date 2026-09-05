@@ -8,11 +8,13 @@
     <body>
         
         <h1 id="main">Retro Tabs</h1>
-      <!-- ...existing code... -->
+    
 <div class="apps">
-<div class="app">
+<div class="app calendarApp">
     <div class="appName">
         <p>Calendar</p>
+        <button class="upButton" type="button" id="calendarUp">Up</button>
+        <button class="downButton" type="button" id="calendarDown">Down</button>
     </div>
     <div class="appContents">
         <div id="calendar">
@@ -31,27 +33,41 @@
     </div>
 </div>
 
-<div class="app">
+<div class="app notepadApp">
     <div class="appName">
         <p>Notepad</p>
+        <button class="upButton" type="button" id="notepadUp">Up</button>
+        <button class="downButton" type="button" id="notepadDown">Down</button>
     </div>
     <div class="appContents">
         <textarea id="notepad" placeholder="Begin typing..."></textarea>
     </div>
 </div>
 
-        <div class="app">
+        <div class="app doomApp">
             <div class="appName">
-                Doom
+                
+                <p>Doom</p><button class="upButton" type="button" id="doomUp">Up</button>
+        <button class="downButton" type="button" id="doomDown">Down</button>
             </div>
             <div class="appContents">
-            Coming Soon!
+                <div class="doomGame" id="doomGame">
+                    <div class="doomHud">
+                        <span>MARINE <b id="doomHealth">100</b>%</span>
+                        <span>AMMO <b id="doomAmmo">24</b></span>
+                        <span>DEMONS <b id="doomScore">0</b>/5</span>
+                    </div>
+                    <canvas id="doomCanvas" width="640" height="360" tabindex="0" aria-label="Doom inspired game"></canvas>
+                    <div class="doomPrompt" id="doomPrompt">CLICK TO PLAY | WASD MOVE | MOUSE AIM | CLICK FIRE</div>
+                </div>
             </div>
         </div>
        
         <div class="app">
             <div class="appName">
-                About Me
+                <p>About Me</p>
+                <button class="upButton" type="button" id="aboutUp">Up</button>
+                <button class="downButton" type="button" id="aboutDown">Down</button>
             </div>
             <div class="appContents">
                 <p>Interests: Engineering, finance, drones, 1990s, rock-n-roll, and computers.</p>
@@ -61,18 +77,25 @@
 
             </div>
         </div>
-        <div class="app">
+        <div class="app projectsMinimized">
             <div class="appName">
-                My Projects
+                
+                <p>My Projects</p>
+                <button class="minimize" id="minimizeMyProjects" aria-expanded="false">Enlarge</button>
+                <button class="upButton" type="button" id="projectsUp">Up</button>
+        <button class="downButton" type="button" id="projectsDown">Down</button>
             </div>
             <div class="appContents">
-                <p>Software: RetroTabs,<br> <img src="drone.png"><br><a href="https://bdlloyd83.github.io/aBeginnersGuidetoDroneWarfare/works.html">Drone Warfare</a>,<br> <img src="wisdom.png"><br><a href="https://bdlloyd83.github.io/WisdomOS1.0/">WisdomOS</a></p>
+                <p>Software: RetroTabs,<br> <img src="DexterOS2.0.png" alt="dexter"><br><a href="https://stardance.hackclub.com/projects/54858" >DexterOS,</a><br>
+                    <img src="drone.png"><br><a href="https://bdlloyd83.github.io/aBeginnersGuidetoDroneWarfare/works.html">Drone Warfare</a>,<br> <img src="wisdom.png"><br><a href="https://bdlloyd83.github.io/WisdomOS1.0/">WisdomOS</a></p>
                 <p>Hardware: <br><img src="motor.png" alt="motor"><br><a href="https://stardance.hackclub.com/projects/53983">3d-printed brushless motor</a></p>
             </div>
         </div>
         <div class="app">
             <div class="appName">
-                Contact
+                <p>Contact</p>
+                <button class="upButton" type="button" id="contactUp">Up</button>
+                <button class="downButton" type="button" id="contactDown">Down</button>
             </div>
             <div class="appContents">
                 <p>Feel free to reach out through these platforms some way or<br> another. Im sure you can i dont know how other than<br> commenting on my
@@ -80,10 +103,30 @@
                 </p>
             </div>
         </div>
+        <div class="app webBrowser">
+            <div class="appName">
+                <p>Web Browser</p>
+                <button class="upButton" type="button" id="webUp">Up</button>
+                <button class="downButton" type="button" id="webDown">Down</button>
+            </div>
+            <div class="appContents">
+                <div class="browserViewport">
+                    <iframe src="https://www.google.com/webhp?igu=1" title="Google" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
         </div>
          <div class="taskbar">
-            <p id="clock">00:00:00 AM</p>
+            <p>Retro Tabs&emsp14;</p>
+            <p id="clock">00:00:00 AM</p> 
+            <button class="modeSwitch" id="modeSwitch" type="button" aria-pressed="false">
+                <span id="modeLabel">1997 mode</span>
+            </button>
+            <button class="darkModeSwitch" id="darkModeSwitch" type="button" aria-pressed="false" hidden>
+                <span>Dark mode</span>
+            </button>
         </div>
+       
         <br>
         <br>
     </body>
